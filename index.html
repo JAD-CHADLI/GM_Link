@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMMO | Final Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Canvases for all visual effects -->
+    <canvas id="particle-canvas"></canvas>
+    <canvas id="trail-canvas"></canvas>
+
+    <!-- NEW: Wrapper for 3D perspective -->
+    <div class="perspective-wrap">
+        <div class="electric-border">
+            <div class="eb-canvas-container">
+                <canvas class="eb-canvas"></canvas>
+            </div>
+            <div class="eb-layers">
+                <div class="eb-glow-1"></div>
+                <div class="eb-glow-2"></div>
+                <div class="eb-background-glow"></div>
+            </div>
+            <div class="eb-content">
+                <div class="container">
+                    <div class="profile">
+                        <img src="https://i.pinimg.com/736x/61/ff/09/61ff091de0bd955741a94b9ca6b10a44.jpg" alt="GAMMO Logo" class="logo">
+                        <h1>GAMMO</h1>
+                        <p>Your official links, all in one place.</p>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/JAD-CHADLI" target="_blank" class="link-button"><i class="fab fa-github"></i> <span class="link-text">GitHub</span></a>
+                        <a href="#" target="_blank" class="link-button"><i class="fab fa-kickstarter-k"></i> <span class="link-text">Kick</span></a>
+                        <a href="#" target="_blank" class="link-button"><i class="fab fa-twitch"></i> <span class="link-text">Twitch</span></a>
+                        <a href="#" target="_blank" class="link-button"><i class="fab fa-youtube"></i> <span class="link-text">YouTube</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NEW: Audio elements (replace src with your files) -->
+    <audio id="audio-load" src="path/to/your/load-sound.mp3" preload="auto"></audio>
+    <audio id="audio-hover" src="path/to/your/hover-sound.mp3" preload="auto"></audio>
+    <audio id="audio-ambient" src="path/to/your/ambient-hum.mp3" preload="auto" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
